@@ -3,7 +3,7 @@ title: YOUSIKU
 SEOTitle: 杨子江的博客 | YOUSIKU
 header-img: img/home-bg.jpg 
 email: yousiku@qq.com
-description: "唯刀百辟，唯心不易 | 杨子江，Pythoner & HDUer"
+description: "唯刀百辟，唯心不易 | 杨子江，Pythonista"
 keyword: "杨子江, YOUSIKU, yousiku, yzj, yangzj, 杨子江的博客, yzj's blog, python, 博客, 个人网站, 互联网"
 url: "https://yangzj.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -70,7 +70,7 @@ ga_domain: yangzj.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程<br>email: yousiku@qq.com<br>wechat: Aspen_1993"
+sidebar-about-description: "力不从心<br>“如果痛苦的话，就不要努力了吧”<br>Email: yousiku@qq.com<br>Wechat: Aspen_1993"
 sidebar-avatar: /img/avatar-yzj.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
