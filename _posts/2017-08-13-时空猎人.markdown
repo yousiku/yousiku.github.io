@@ -1,0 +1,117 @@
+---
+layout:     post
+title:      "时空猎人：python标准库datetime,time,calendar"
+subtitle:   "未完待续"
+date:       2017-08-13 21:27:00
+author:     "Yousiku"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - python
+---
+
+在开发中我们常常需要处理时间。
+通常我们会面对两种形式的时间，一种是格式化字符串的形式，如"2017-08-03 21:32:00"，即文字形式能被人轻易识别的形式；
+另一种是[UNIX时间戳](https://baike.baidu.com/item/%E6%97%B6%E9%97%B4%E6%88%B3)格式，即从1970年0点开始到现在经过的秒数。
+Python提供了三个时间相关的标准库datetime, time, calendar能够很好的帮助我们解决处理时间的问题。
+
+### 实验环境
+- python==3.5.2
+
+### datetime
+datetime模块主要包含了以下几种对象类型：
+|type||
+|----------|-----|
+|date|日期对象，包含year, month, day三个属性|
+|time|特指一天中的时间，包含hour, minute, second, microsecond, tzinfo属性|
+|datetime|详细的日期及时间，包含year, month, day, hour, minute, second, microsecond, tzinfo属性|
+|timedelta|一段时间间隔，用于date, datetime, time对象中的计算|
+|tzinfo|时区信息|
+|timezone|时区类，通过继承该类来自定义时区信息|
+
+#### 获取当前的时间对象
+```
+>>> datetime.date.today()
+datetime.date(2017, 8, 13)
+>>> datetime.datetime.today()
+datetime.datetime(2017, 8, 13, 22, 39, 39, 973605)
+>>> datetime.datetime.now()
+datetime.datetime(2017, 8, 13, 22, 39, 44, 181524)
+>>> datetime.datetime.utcnow()
+datetime.datetime(2017, 8, 13, 14, 39, 49, 258556)
+```
+以上都是获取当前时间的方法，不同之处在于date对象相比datetime对象没有时分秒毫秒属性，只能看到日期；
+datetime的today()和now()方法基本相同，只不过today()方法不接受参数返回默认时区的结果，而now()方法可以指定时区参数；
+utcnow()方法返回当前的伦敦时间。
+得到时间对象后就可以访问属性获取具体值了：
+```
+>>> t = datetime.datetime.today()
+>>> print("今天是{}年{}月{}日{}时{}分{}秒".format(t.year, t.month, t.day, t.hour, t.minute, t.second))
+今天是2017年8月13日22时49分27秒
+```
+
+### 从时间戳获取时间对象
+```
+>>> datetime.datetime.fromtimestamp(1502635916.0878983)
+datetime.datetime(2017, 8, 13, 22, 51, 56, 87898)
+>>> datetime.datetime.utcfromtimestamp(1502635916.0878983)
+datetime.datetime(2017, 8, 13, 14, 51, 56, 87898)
+```
+同样的，utcfromtimestamp的区别是将事件戳转为伦敦时间对象
+
+### 从字符串获取时间对象
+主要用到strptime(date_string, format)方法，其中date_string为要从中获取时间的字符串，format为时间在字符串中的格式，如：
+```
+>>> datetime.datetime.strptime("2017-08-13 23:01:00", "%Y-%m-%d %H:%M:%S")
+datetime.datetime(2017, 8, 13, 23, 1)
+```
+其中%Y, %m, %d, %H, %M, %S分别表示年，月，日，时，分，秒，strptime方法按照format中的格式从date_string中查找对应属性并创建时间对象。如果date_string和format中的格式不对应将会报错：
+```
+>>> datetime.datetime.strptime("2017-08-13 23:01:00", "%Y%m%d %H:%M:%S")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "D:\python35\Lib\_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "D:\python35\Lib\_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2017-08-13 23:01:00' does not match format '%Y%m%d %H:%M:%S'
+```
+具体的format如下表：
+|格式|含义|示例|
+|---|---|---|
+|%a|星期简写|Sun, Mon, ..., Sat |
+|%A|星期全名|Sunday, Monday, ..., Saturday |
+|%w|星期数字形式，0-6表示星期一到星期天|0, 1, ..., 6|
+|%d|日|01, 02, ..., 31|
+|%b|月份简写|Jan, Feb, ..., Dec |
+|%B|月份全名|January, February, ..., December |
+|%m|月|01, 02, ..., 12
+|%y|年份后两位|00, 01, ..., 99|
+|%Y|年份全四位|0001, 0002, ..., 2013, 2014, ..., 9998, 9999|
+|%H|小时（24小时制）|00, 01, ..., 23|
+|%I|小时（12小时制）|01, 02, ..., 12|
+|%p|上午，下午|AM, PM |
+|%M|分|00, 01, ..., 59|
+|%S|秒|00, 01, ..., 59|
+|%f|毫秒|000000, 000001, ..., 999999|
+|%z|时区偏离（+HHMM或-HHMM形式，若无时区返回空字符串）|(empty), +0000, -0400, +1030|
+|%Z|时区名（若无时区返回空字符串）|(empty), UTC, EST, CST|
+|%j|一年的第几天|001, 002, ..., 366|
+|%U|一年的第几个星期（按星期天为第一天算，一年的第一个星期天前的时间记为第0星期）|00, 01, ..., 53|
+|%W|一年的第几个星期（按星期一为第一天算，一年的第一个星期一前的时间记为第0星期）|00, 01, ..., 53|
+|%c|详细的日期和时间表示|Sun Aug 13 22:49:27 2017|
+|%x|详细的日期表示|08/13/17|
+|%X|详细的时间表示|22:49:27|
+|%%|%字符|%|
+因此，datetime能够从各种诡异的字符串中提取时间！：
+```
+>>> datetime.datetime.strptime("今天是2017年的第225天", "今天是%Y年的第%j天")
+datetime.datetime(2017, 8, 13, 0, 0)
+>>> datetime.datetime.strptime("今天是2017年的第33个星期的Sunday", "今天是%Y年的第%U个星期的%A")
+datetime.datetime(2017, 8, 13, 0, 0)
+>>> datetime.datetime.strptime("现在是08/13/17的PM.11点47分", "现在是%x的%p.%I点%M分")
+datetime.datetime(2017, 8, 13, 23, 47)
+```
+是不是挺强大的？
+
+## 未完待续。。。
