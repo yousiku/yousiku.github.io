@@ -7,6 +7,7 @@ description: "唯刀百辟，唯心不易 | 杨子江，Pythonista"
 keyword: "杨子江, YOUSIKU, yousiku, yzj, yangzj, 杨子江的博客, yzj's blog, python, 博客, 个人网站, 互联网"
 url: "https://yangzj.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+encoding: UTF-8
 
 
 
