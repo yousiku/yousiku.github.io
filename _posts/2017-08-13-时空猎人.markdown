@@ -35,6 +35,7 @@ datetime模块主要包含了以下几种对象类型：
 #### 获取当前的时间对象
 
 ```
+>>> import datetime
 >>> datetime.date.today()
 datetime.date(2017, 8, 13)
 >>> datetime.datetime.today()
