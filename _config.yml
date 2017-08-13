@@ -71,7 +71,7 @@ ga_domain: yangzj.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "力不从心<br>“如果痛苦的话，就不要努力了吧”<br>Email: yousiku@qq.com<br>Wechat: Aspen_1993"
+sidebar-about-description: "怎么也吃不胖<br>Email: yousiku@qq.com<br>Wechat: Aspen_1993"
 sidebar-avatar: /img/avatar-yzj.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
