@@ -3,7 +3,7 @@ layout:     post
 title:      "Hello Yousiku"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2017-04-15 11:00:00
-author:     "YZJ"
+author:     "Yousiku"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
