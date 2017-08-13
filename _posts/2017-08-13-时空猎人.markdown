@@ -62,7 +62,7 @@ utcnow()方法返回当前的伦敦时间。
 今天是2017年8月13日22时49分27秒
 ```
 
-### 从时间戳获取时间对象
+#### 从时间戳获取时间对象
 
 ```
 >>> datetime.datetime.fromtimestamp(1502635916.0878983)
@@ -73,7 +73,7 @@ datetime.datetime(2017, 8, 13, 14, 51, 56, 87898)
 
 同样的，utcfromtimestamp的区别是将事件戳转为伦敦时间对象
 
-### 从字符串获取时间对象
+#### 从字符串获取时间对象
 
 主要用到strptime(date_string, format)方法，其中date_string为要从中获取时间的字符串，format为时间在字符串中的格式，如：
 
