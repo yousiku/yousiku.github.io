@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Python3.5ÎÄµµÑ§Ï°±Ê¼Ç"
-subtitle:   "³ÖÐø¸üÐÂ£¬pythonÖÐµÄÒ»Ð©Ï¸½Ú"
+title:      "Python3.5æ–‡æ¡£å­¦ä¹ ç¬”è®°"
+subtitle:   "æŒç»­æ›´æ–°ï¼Œpythonä¸­çš„ä¸€äº›ç»†èŠ‚"
 date:       2017-08-13 19:02:00
 author:     "Yousiku"
 header-img: "img/post-bg-2015.jpg"
@@ -12,18 +12,18 @@ tags:
 
 
 
-### **¹ØÓÚ´«Í³³ý / ºÍµØ°å³ý //**
+### **å…³äºŽä¼ ç»Ÿé™¤ / å’Œåœ°æ¿é™¤ //**
 #### python2
-ÔÚpython2ÖÐ£¬´«Í³³ý»á¸ù¾Ý²Ù×÷ÊýÀ´ÅÐ¶Ï£º
- - Èô²Ù×÷Êý¶¼ÎªÕûÊý£¬ÔòÉÌÉáÈ¥Ð¡ÊýºóµÄ²¿·Ö£¬·µ»ØÕûÊý
- - Èô²Ù×÷ÊýÖÐÓÐ¸¡µãÊý£¬ÔòÉÌÎªÕýÈ·µÄÖµ£¬·µ»Ø¸¡µãÊý
+åœ¨python2ä¸­ï¼Œä¼ ç»Ÿé™¤ä¼šæ ¹æ®æ“ä½œæ•°æ¥åˆ¤æ–­ï¼š
+ - è‹¥æ“ä½œæ•°éƒ½ä¸ºæ•´æ•°ï¼Œåˆ™å•†èˆåŽ»å°æ•°åŽçš„éƒ¨åˆ†ï¼Œè¿”å›žæ•´æ•°
+ - è‹¥æ“ä½œæ•°ä¸­æœ‰æµ®ç‚¹æ•°ï¼Œåˆ™å•†ä¸ºæ­£ç¡®çš„å€¼ï¼Œè¿”å›žæµ®ç‚¹æ•°
 ```
 >>> 1 / 2
 0
 >>> 1 / 2.0
 0.5
 ```
-ÈôÓÃµØ°å³ý£¬ÔòÎÞÂÛÈçºÎ¶¼ÉáÈ¥Ð¡ÊýµãºóµÄ²¿·Ö£¬²¢¸ù¾Ý²Ù×÷ÊýÅÐ¶Ï·µ»ØÀàÐÍ£º
+è‹¥ç”¨åœ°æ¿é™¤ï¼Œåˆ™æ— è®ºå¦‚ä½•éƒ½èˆåŽ»å°æ•°ç‚¹åŽçš„éƒ¨åˆ†ï¼Œå¹¶æ ¹æ®æ“ä½œæ•°åˆ¤æ–­è¿”å›žç±»åž‹ï¼š
 
 ```
 >>> 1 // 2
@@ -32,14 +32,14 @@ tags:
 0.0
 ```
 #### python3
-ÔÚpython3ÖÐ£¬´«Í³³ý²»ÔÙ¸ù¾Ý²Ù×÷ÊýÅÐ¶Ï£¬¶øÊÇÖ±½ÓÖ´ÐÐ¾«È·³ý·¨£º
+åœ¨python3ä¸­ï¼Œä¼ ç»Ÿé™¤ä¸å†æ ¹æ®æ“ä½œæ•°åˆ¤æ–­ï¼Œè€Œæ˜¯ç›´æŽ¥æ‰§è¡Œç²¾ç¡®é™¤æ³•ï¼š
 ```
 >>> 1 / 2
 0.5
 >>> 1 / 2.0
 0.5
 ```
-µØ°å³ý»¹ÊÇºÍpython2Ò»Ñù
+åœ°æ¿é™¤è¿˜æ˜¯å’Œpython2ä¸€æ ·
 ```
 >>> 1 // 2   
 0            
@@ -47,8 +47,8 @@ tags:
 0.0          
 ```
 
-### **Ñ­»·Óï¾äÖÐµÄelse×Ó¾ä**
-ÈôÑ­»·ºó¸úÁËelse×Ó¾ä£¬Ôòelse×Ó¾äÖÐµÄ²¿·ÖÔÚÑ­»·Ã»ÓÐ±»break£¨¼´Õý³£ÔËÐÐÍê£©Ê±Ö´ÐÐ£º
+### **å¾ªçŽ¯è¯­å¥ä¸­çš„elseå­å¥**
+è‹¥å¾ªçŽ¯åŽè·Ÿäº†elseå­å¥ï¼Œåˆ™elseå­å¥ä¸­çš„éƒ¨åˆ†åœ¨å¾ªçŽ¯æ²¡æœ‰è¢«breakï¼ˆå³æ­£å¸¸è¿è¡Œå®Œï¼‰æ—¶æ‰§è¡Œï¼š
 test1.py
 ```
 for i in range(3):
@@ -57,7 +57,7 @@ else:
     print("else")
 ```
 ```
-¦Ë python test1.py
+Î» python test1.py
 0
 1
 2
@@ -73,13 +73,13 @@ else:
     print("else")
 ```
 ```
-¦Ë python test2.py    
+Î» python test2.py    
 0                             
 1                             
 2                             
 ```
-### **¸³Öµ/Ç³¸´ÖÆ/Éî¸´ÖÆ**
-pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ¸ÏòËü£»ÔÙ¸³Öµa=2£¬ÔòÁí´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó2£¬ÈÃaÖ¸ÏòËü£»ÔÙ¸³Öµb=a£¬Ôò½«bÖ¸Ïò2Õâ¸ö¶ÔÏó£º
+### **èµ‹å€¼/æµ…å¤åˆ¶/æ·±å¤åˆ¶**
+pythonä¸­çš„èµ‹å€¼ç›¸å½“äºŽå¼•ç”¨ï¼Œå˜é‡æ›´åƒæ˜¯æŒ‡é’ˆã€‚å¦‚ï¼Œa=1ï¼Œåˆ›å»ºäº†ä¸€ä¸ªæ•´æ•°å¯¹è±¡1ï¼Œå¹¶ä¸”è®©aæŒ‡å‘å®ƒï¼›å†èµ‹å€¼a=2ï¼Œåˆ™å¦åˆ›å»ºäº†ä¸€ä¸ªæ•´æ•°å¯¹è±¡2ï¼Œè®©aæŒ‡å‘å®ƒï¼›å†èµ‹å€¼b=aï¼Œåˆ™å°†bæŒ‡å‘2è¿™ä¸ªå¯¹è±¡ï¼š
 ```
 >>> a = 1  
 >>> id(a)  
@@ -91,7 +91,7 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> id(b)
 1599559968
 ```
-´ËÊ±¸³Öµa=3£¬Ôòb=2²»±ä£¬ÒòÎªaÖ¸ÏòÁËÁíÒ»¸ö¶ÔÏó3£¬¶øb»¹ÊÇÖ¸Ïò2£º
+æ­¤æ—¶èµ‹å€¼a=3ï¼Œåˆ™b=2ä¸å˜ï¼Œå› ä¸ºaæŒ‡å‘äº†å¦ä¸€ä¸ªå¯¹è±¡3ï¼Œè€Œbè¿˜æ˜¯æŒ‡å‘2ï¼š
 ```
 >>> a = 3   
 >>> id(a)   
@@ -101,7 +101,7 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> id(b)   
 1599559968  
 ```
-È»¶øÈç¹û¸³ÓèµÄÖµÊÇ¿É±ä¶ÔÏóÈçÁÐ±íÊ±£¬Çé¿öÓÖ»áÓÐËù²»Í¬£º
+ç„¶è€Œå¦‚æžœèµ‹äºˆçš„å€¼æ˜¯å¯å˜å¯¹è±¡å¦‚åˆ—è¡¨æ—¶ï¼Œæƒ…å†µåˆä¼šæœ‰æ‰€ä¸åŒï¼š
 ```
 >>> aa = [1, 2]
 >>> bb = aa
@@ -111,8 +111,8 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> aa, bb, id(aa), id(bb)
 ([1, 2, 3], [1, 2, 3], 49214288, 49214288)
 ```
-¿ÉÒÔ¿´µ½£¬µ±bb=aaÊ±£¬Èôaa¸Ä±äÁË£¬bbÒ²¸ú×ÅÒ»Æð±äÁË¡£ÕâÊÇÒòÎªaa.append(3)Óï¾ä²¢Ã»ÓÐ´´½¨Ò»¸öÐÂµÄÁÐ±í¶ÔÏóÈÃaaÖ¸ÏòËü£¬¶øÊÇÔÙÔ­À´µÄ¶ÔÏóÉÏÌí¼ÓÔªËØ£¬¶ø´ËÊ±bbÒ²Ö¸ÏòÕâ¸ö¶ÔÏó£¬Òò´ËbbµÄÖµÒ²¸ú×Å±äÁË¡£¶øÖ®Ç°a=2ºÍb=2ÓÉÓÚ2ÊÇÕûÊý¼´²»¿É±ä¶ÔÏó£¬ÁíÍâ¸³ÖµÊ±»áÐÂ´´½¨¶ÔÏó¡£
-Èç¹ûÒªÈÃbb²»¸úËæaa±ä»¯£¬¾Í²»ÄÜÊ¹ÓÃaa.append(3)µÄ·½Ê½£¬¶øÓ¦¸Ã²ÉÓÃaa = aa[:]»òaa = aa.copy()µÄ·½Ê½£¬ÕâÑù»á¸´ÖÆaaÖ¸ÏòµÄÄÚÈÝ´´½¨Ò»¸öÐÂµÄ¶ÔÏóÔÙÈÃaaÖ¸ÏòËü£¬ÔÙÖ´ÐÐaa.append(3)½«²»»áÓ°Ïìbb£º
+å¯ä»¥çœ‹åˆ°ï¼Œå½“bb=aaæ—¶ï¼Œè‹¥aaæ”¹å˜äº†ï¼Œbbä¹Ÿè·Ÿç€ä¸€èµ·å˜äº†ã€‚è¿™æ˜¯å› ä¸ºaa.append(3)è¯­å¥å¹¶æ²¡æœ‰åˆ›å»ºä¸€ä¸ªæ–°çš„åˆ—è¡¨å¯¹è±¡è®©aaæŒ‡å‘å®ƒï¼Œè€Œæ˜¯å†åŽŸæ¥çš„å¯¹è±¡ä¸Šæ·»åŠ å…ƒç´ ï¼Œè€Œæ­¤æ—¶bbä¹ŸæŒ‡å‘è¿™ä¸ªå¯¹è±¡ï¼Œå› æ­¤bbçš„å€¼ä¹Ÿè·Ÿç€å˜äº†ã€‚è€Œä¹‹å‰a=2å’Œb=2ç”±äºŽ2æ˜¯æ•´æ•°å³ä¸å¯å˜å¯¹è±¡ï¼Œå¦å¤–èµ‹å€¼æ—¶ä¼šæ–°åˆ›å»ºå¯¹è±¡ã€‚
+å¦‚æžœè¦è®©bbä¸è·Ÿéšaaå˜åŒ–ï¼Œå°±ä¸èƒ½ä½¿ç”¨aa.append(3)çš„æ–¹å¼ï¼Œè€Œåº”è¯¥é‡‡ç”¨aa = aa[:]æˆ–aa = aa.copy()çš„æ–¹å¼ï¼Œè¿™æ ·ä¼šå¤åˆ¶aaæŒ‡å‘çš„å†…å®¹åˆ›å»ºä¸€ä¸ªæ–°çš„å¯¹è±¡å†è®©aaæŒ‡å‘å®ƒï¼Œå†æ‰§è¡Œaa.append(3)å°†ä¸ä¼šå½±å“bbï¼š
 
 ```
 >>> aa, bb, id(aa), id(bb)
@@ -124,7 +124,7 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> aa, bb, id(aa), id(bb)
 ([1, 2, 3, 3], [1, 2, 3], 49213688, 49214288)
 ```
-ÕâÖÖ¸´ÖÆ¶ÔÏóµÄ·½Ê½½Ð×öÇ³¸´ÖÆ£¬ÒòÎªËüÖ»ÄÜ¸´ÖÆ×îÍâ²ãµÄÄÚÈÝ´´½¨ÐÂµÄ¶ÔÏó£¬¶ø¶ÔÓÚÇ¶Ì×ÄÚµÄÄÚÈÝÒÀÈ»ÊÇÖ¸Ïò¹ØÏµ£º
+è¿™ç§å¤åˆ¶å¯¹è±¡çš„æ–¹å¼å«åšæµ…å¤åˆ¶ï¼Œå› ä¸ºå®ƒåªèƒ½å¤åˆ¶æœ€å¤–å±‚çš„å†…å®¹åˆ›å»ºæ–°çš„å¯¹è±¡ï¼Œè€Œå¯¹äºŽåµŒå¥—å†…çš„å†…å®¹ä¾ç„¶æ˜¯æŒ‡å‘å…³ç³»ï¼š
 
 ```
 >>> aaa = [1, [1, 2], 3]
@@ -136,7 +136,7 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> aaa, bbb
 ([4, [5, 2], 3], [1, [5, 2], 3])
 ```
-ÓÉÉÏ¿ÉÖªbbbµÄÍâ²ãÔªËØÒòÎªÊÇcopyµÄÔµ¹Ê²»ÊÜaaaÓ°Ïì£¬¿ÉÊÇbbb[1]»¹ÊÇÓëaaa[1]Ö¸ÏòÍ¬Ò»¸öÁÐ±í¶ÔÏó¡£Èç¹ûÐèÒª½«Ç¶Ì×ÄÚµÄÔªËØÈ«²¿¸´ÖÆÔòÐèÒªÓÃµ½copy±ê×¼¿âµÄdeepcopy·½·¨£º
+ç”±ä¸Šå¯çŸ¥bbbçš„å¤–å±‚å…ƒç´ å› ä¸ºæ˜¯copyçš„ç¼˜æ•…ä¸å—aaaå½±å“ï¼Œå¯æ˜¯bbb[1]è¿˜æ˜¯ä¸Žaaa[1]æŒ‡å‘åŒä¸€ä¸ªåˆ—è¡¨å¯¹è±¡ã€‚å¦‚æžœéœ€è¦å°†åµŒå¥—å†…çš„å…ƒç´ å…¨éƒ¨å¤åˆ¶åˆ™éœ€è¦ç”¨åˆ°copyæ ‡å‡†åº“çš„deepcopyæ–¹æ³•ï¼š
 
 ```
 >>> aaa = [1, [1, 2], 3]
@@ -149,10 +149,10 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> aaa, bbb
 ([4, [5, 2], 3], [1, [1, 2], 3])
 ```
-ÕâÖÖ½«Ç¶Ì×ÄÚÔªËØÈ«²¿¸´ÖÆµÄ·½·¨½ÐÉî¸´ÖÆ
-### **²ÎÊýÖÐµÄ \* ºÍ \** Ç°×º**
-¾­³£ÄÜ¿´µ½ÕâÑùµÄº¯Êý¶¨Òå£ºfunc(*args, **kwargs)
-ÆäÖÐ*Ç°×º±íÊ¾±éÀúargsµÄÔªËØ×÷Îª²ÎÊýÒÀ´Î´«µÝ¸øº¯Êý£º
+è¿™ç§å°†åµŒå¥—å†…å…ƒç´ å…¨éƒ¨å¤åˆ¶çš„æ–¹æ³•å«æ·±å¤åˆ¶
+### **å‚æ•°ä¸­çš„ \* å’Œ \** å‰ç¼€**
+ç»å¸¸èƒ½çœ‹åˆ°è¿™æ ·çš„å‡½æ•°å®šä¹‰ï¼šfunc(*args, **kwargs)
+å…¶ä¸­*å‰ç¼€è¡¨ç¤ºéåŽ†argsçš„å…ƒç´ ä½œä¸ºå‚æ•°ä¾æ¬¡ä¼ é€’ç»™å‡½æ•°ï¼š
 
 ```
 >>> a = "123"
@@ -162,7 +162,7 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> print(*a, *b, *c, *d)
 1 2 3 1 2 3 1 2 3 1 2 3
 ```
-¶ø**Ç°×ºÖ»¸ú×ÖµäÀàÐÍ£¬½«×ÖµäÖÐµÄkeyºÍvalueÄÃ³öÀ´´«µÝ¸øº¯Êý£º
+è€Œ**å‰ç¼€åªè·Ÿå­—å…¸ç±»åž‹ï¼Œå°†å­—å…¸ä¸­çš„keyå’Œvalueæ‹¿å‡ºæ¥ä¼ é€’ç»™å‡½æ•°ï¼š
 
 ```
 >>> aa = {"a": "aa", "b": "bb"}
@@ -172,10 +172,10 @@ pythonÖÐµÄ¸³ÖµÏàµ±ÓÚÒýÓÃ£¬±äÁ¿¸üÏñÊÇÖ¸Õë¡£Èç£¬a=1£¬´´½¨ÁËÒ»¸öÕûÊý¶ÔÏó1£¬²¢ÇÒÈÃaÖ
 >>> f(**aa)
 b: bb, a: aa
 ```
-ÆäÖÐµÄf(**aa)¾ÍÏàµ±ÓÚf(a="aa", b="bb")
+å…¶ä¸­çš„f(**aa)å°±ç›¸å½“äºŽf(a="aa", b="bb")
 
-### **µü´úÆ÷**
-ÎÒÃÇÖªµÀ£¬Ïñ×Ö·û´®£¬ÁÐ±í£¬×ÖµäµÈ¶ÔÏóÊÇ¿ÉÒÔÓÃforÀ´Ñ­»·±éÀúµÄ£¬È»¶øÎÒÃÇ×Ô¼º½¨Á¢Ò»¸öÆÕÍ¨µÄ¶ÔÏóÈ´²»ÄÜÓÃfor±éÀú£º
+### **è¿­ä»£å™¨**
+æˆ‘ä»¬çŸ¥é“ï¼Œåƒå­—ç¬¦ä¸²ï¼Œåˆ—è¡¨ï¼Œå­—å…¸ç­‰å¯¹è±¡æ˜¯å¯ä»¥ç”¨foræ¥å¾ªçŽ¯éåŽ†çš„ï¼Œç„¶è€Œæˆ‘ä»¬è‡ªå·±å»ºç«‹ä¸€ä¸ªæ™®é€šçš„å¯¹è±¡å´ä¸èƒ½ç”¨foréåŽ†ï¼š
 test.py
 ```python
 class A:
@@ -188,13 +188,13 @@ for c in a:
 ```
 
 ```
-¦Ë python test.py
+Î» python test.py
 Traceback (most recent call last):
   File "test.py", line 15, in <module>
     for c in a:
 TypeError: 'A' object is not iterable
 ```
-ÕâÊÇÒòÎªÊ¹ÓÃforÊ±»áÄ¬ÈÏµ÷ÓÃiter()·µ»ØÒ»¸öµü´úÆ÷£¬µü´úÆ÷°üº¬next()º¯ÊýÀ´·µ»ØÏÂÒ»¸öÔªËØ¡£µ±µü´úÆ÷ÖÐÔªËØÓÃ¾¡ºó·µ»ØÒ»¸öStopIterationÒì³£¸æËßforÑ­»·¸Ã½áÊøÁË£º
+è¿™æ˜¯å› ä¸ºä½¿ç”¨foræ—¶ä¼šé»˜è®¤è°ƒç”¨iter()è¿”å›žä¸€ä¸ªè¿­ä»£å™¨ï¼Œè¿­ä»£å™¨åŒ…å«next()å‡½æ•°æ¥è¿”å›žä¸‹ä¸€ä¸ªå…ƒç´ ã€‚å½“è¿­ä»£å™¨ä¸­å…ƒç´ ç”¨å°½åŽè¿”å›žä¸€ä¸ªStopIterationå¼‚å¸¸å‘Šè¯‰forå¾ªçŽ¯è¯¥ç»“æŸäº†ï¼š
 ```
 >>> a = iter("123")
 >>> next(a)
@@ -208,7 +208,7 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
 ```
-ËùÒÔÈç¹ûÒªÈÃÎÒÃÇ×Ô¼ºµÄ¶ÔÏóº¬ÓÐµü´úÆ÷ÌØÐÔ£¬¿ÉÒÔÍ¨¹ý¶¨Òå\__iter__()·½·¨Ê¹¶ÔÏó¿Éµü´ú£¬Í¨¹ý¶¨Òå\__next__()·½·¨¶¨ÒåÃ¿´Îµü´ú·µ»ØµÄÔªËØ£º
+æ‰€ä»¥å¦‚æžœè¦è®©æˆ‘ä»¬è‡ªå·±çš„å¯¹è±¡å«æœ‰è¿­ä»£å™¨ç‰¹æ€§ï¼Œå¯ä»¥é€šè¿‡å®šä¹‰\__iter__()æ–¹æ³•ä½¿å¯¹è±¡å¯è¿­ä»£ï¼Œé€šè¿‡å®šä¹‰\__next__()æ–¹æ³•å®šä¹‰æ¯æ¬¡è¿­ä»£è¿”å›žçš„å…ƒç´ ï¼š
 test.py
 ```python
 class A:
@@ -231,35 +231,35 @@ for c in a:
 ```
 
 ```
-¦Ë python test.py
+Î» python test.py
 t
 e
 s
 t
 ```
 
-### **Ê¹ÓÃstr.format()·½·¨¸ñÊ½»¯×Ö·û´®**
-ËäÈ»pythonÖ§³ÖÊ¹ÓÃCÓïÑÔ·ç¸ñµÄ¸ñÊ½»¯·½Ê½£¬Èç£º
+### **ä½¿ç”¨str.format()æ–¹æ³•æ ¼å¼åŒ–å­—ç¬¦ä¸²**
+è™½ç„¶pythonæ”¯æŒä½¿ç”¨Cè¯­è¨€é£Žæ ¼çš„æ ¼å¼åŒ–æ–¹å¼ï¼Œå¦‚ï¼š
 
 ```
 >>> print("%d is a integer" % 2)
 2 is a integer
 ```
-µ«ÊÇÊ¹ÓÃstr.format()·½·¨¸üÇ¿´ó±ã½Ý
-ÆÕÍ¨Çé¿öÏÂ²»ÓÃÔÙÖ¸¶¨ÐèÒª´úÈëµÄÊÇÊ²Ã´ÀàÐÍ£¬Í³Ò»ÓÃ {} ¾ÍÄÜ¸ã¶¨
+ä½†æ˜¯ä½¿ç”¨str.format()æ–¹æ³•æ›´å¼ºå¤§ä¾¿æ·
+æ™®é€šæƒ…å†µä¸‹ä¸ç”¨å†æŒ‡å®šéœ€è¦ä»£å…¥çš„æ˜¯ä»€ä¹ˆç±»åž‹ï¼Œç»Ÿä¸€ç”¨ {} å°±èƒ½æžå®š
 
 ```
 >>> print("{}, {} and {}".format(1, '2', [3, 4, 5]))
 1, 2 and [3, 4, 5]
 ```
-Èç¹ûÏëµÃµ½repr()µÄÄÚÈÝÊ¹ÓÃ{!r}:
+å¦‚æžœæƒ³å¾—åˆ°repr()çš„å†…å®¹ä½¿ç”¨{!r}:
 
 ```
 >>> print("{!r}".format("Wow!!"))
 'Wow!!'
 ```
 
-Èç¹ûÐèÒªÖ¸¶¨´úÈëµÄ²ÎÊý£¬¿ÉÒÔ¼ÓÉÏÏÂ±ê»òÕßÊ¹ÓÃ²ÎÊýÃû£º
+å¦‚æžœéœ€è¦æŒ‡å®šä»£å…¥çš„å‚æ•°ï¼Œå¯ä»¥åŠ ä¸Šä¸‹æ ‡æˆ–è€…ä½¿ç”¨å‚æ•°åï¼š
 
 ```
 >>> print("{2}, {0} and {1}".format(1, '2', {"w": 2}))
@@ -268,7 +268,7 @@ t
 1, {'w': 2} and 2
 >>>
 ```
-¿ÉÒÔ»ñÈ¡²ÎÊýµÄÔªËØ»òÊôÐÔ£º
+å¯ä»¥èŽ·å–å‚æ•°çš„å…ƒç´ æˆ–å±žæ€§ï¼š
 
 ```
 >>> a = [1, 2, 3]
@@ -280,7 +280,7 @@ t
 >>> print("{0[2]}, {1[aa]}, {2.value}".format(a, b, c))
 3, 11, 333
 ```
-¶ÔÆë¼°Ìî³ä£º
+å¯¹é½åŠå¡«å……ï¼š
 
 ```
 >>> print("{:<10}o".format("left"))
@@ -296,16 +296,16 @@ o>>center>>o
 >>> print("o{:A^10}o".format("center"))
 oAAcenterAAo
 ```
-¿ØÖÆÐ¡ÊýÎ»ÊýµÈ£º
+æŽ§åˆ¶å°æ•°ä½æ•°ç­‰ï¼š
 
 ```
 >>> print("{:.3f}".format(1234.44444))
 1234.444
 ```
 
-## **²Î¿¼**
->[1] [PythonÖÐµÄ³ý·¨](http://blog.csdn.net/sicofield/article/details/8613877)
->[2] [python»ù´¡£¨5£©£ºÉîÈëÀí½â python ÖÐµÄ¸³Öµ¡¢ÒýÓÃ¡¢¿½±´¡¢×÷ÓÃÓò](https://my.oschina.net/leejun2005/blog/145911) 
+## **å‚è€ƒ**
+>[1] [Pythonä¸­çš„é™¤æ³•](http://blog.csdn.net/sicofield/article/details/8613877)
+>[2] [pythonåŸºç¡€ï¼ˆ5ï¼‰ï¼šæ·±å…¥ç†è§£ python ä¸­çš„èµ‹å€¼ã€å¼•ç”¨ã€æ‹·è´ã€ä½œç”¨åŸŸ](https://my.oschina.net/leejun2005/blog/145911) 
 
 
 ---
