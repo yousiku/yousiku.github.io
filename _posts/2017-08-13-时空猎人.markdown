@@ -11,8 +11,8 @@ tags:
 ---
 
 在开发中我们常常需要处理时间。  
-通常我们会面对两种形式的时间，一种是格式化字符串的形式，如"2017-08-03 21:32:00"，即文字形式能被人轻易识别的形式；  
-另一种是[UNIX时间戳](https://baike.baidu.com/item/%E6%97%B6%E9%97%B4%E6%88%B3)格式，即从1970年0点开始到现在经过的秒数。  
+通常我们会面对两种形式的时间，一种是**格式化字符串**的形式，如"2017-08-03 21:32:00"，即文字形式能被人轻易识别的形式；  
+另一种是[**UNIX时间戳**](https://baike.baidu.com/item/%E6%97%B6%E9%97%B4%E6%88%B3)格式，即从1970年0点开始到现在经过的秒数。  
 Python提供了三个时间相关的标准库datetime, time, calendar能够很好的帮助我们解决处理时间的问题。
 
 ## 实验环境
@@ -131,5 +131,107 @@ datetime.datetime(2017, 8, 13, 23, 47)
 ```
 
 是不是挺强大的？
+
+#### 时间对象转为字符串
+
+对应从字符串获取时间对象的方法strptime，使用strftime(format)方法将时间对象转为字符串：
+
+```
+>>> t = datetime.datetime.today()
+>>> t.strftime("%Y-%m-%d %H:%M:%S")
+'2017-08-14 21:52:41'
+```
+
+当然也可以利用format将时间对象转为任意我们想要的形式：
+
+```
+# FIXME 此处若用中文字符会报错
+>>> t.strftime("Today is %A, it is now %X")
+'Today is Monday, it is now 21:52:41'
+```
+
+#### 时间对象转为时间戳
+
+```
+>>> t.timestamp()
+1502718761.21239
+```
+
+#### 获取星期数
+
+```
+>>> t.weekday()
+0
+>>> t.isoweekday()
+1
+```
+
+其中weekday()返回0-6表示星期一到星期天，iosweekday()返回1-7表示星期一到星期天
+
+#### 时间的比较
+
+在datetime模块中，任意相同类型的时间对象可以直接用比较运算符拿来作比较，从而判断哪个时间在前，哪个时间在后：
+
+```
+>>> a = datetime.datetime(2017, 9, 1)
+>>> b = datetime.datetime(2017, 8, 1)
+>>> c = datetime.datetime(2017, 8, 1)
+>>> a > b
+True
+>>> a < b
+False
+>>> a == c
+False
+>>> b == c
+True
+```
+
+#### 时间倒退/后移
+
+要让时间倒退或后移，首先我们得知道倒退或后移多长的时间间隔。timedelta正是表示时间间隔的类型。
+timedelta共有days, seconds, microseconds, milliseconds, minutes, hours, weeks八个属性，初始化的时候给相应属性赋值即可：
+
+```
+>>> one_day = datetime.timedelta(days=1)
+>>> one_week = datetime.timedelta(weeks=1)
+>>> five_minutes = datetime.timedelta(minutes=5)
+```
+
+由于一年以及一个月的时间不固定，因此timedelta不包含该属性，想要用的话使用days代替：
+
+```
+>>> days_of_2017 = datetime.timedelta(days=365)
+>>> days_of_August = datetime.timedelta(days=31)
+```
+
+确定了时间间隔后就可以使用" +", " -"运算符让时间后退或后移了：
+
+```
+>>> t = datetime.datetime.now()
+>>> t
+datetime.datetime(2017, 8, 14, 22, 22, 30, 833227)
+>>> t - one_day
+datetime.datetime(2017, 8, 13, 22, 22, 30, 833227)
+>>> t + one_week
+datetime.datetime(2017, 8, 21, 22, 22, 30, 833227)
+>>> t - five_minutes
+datetime.datetime(2017, 8, 14, 22, 17, 30, 833227)
+>>> t - days_of_2017
+datetime.datetime(2016, 8, 14, 22, 22, 30, 833227)
+>>> t + days_of_August
+datetime.datetime(2017, 9, 14, 22, 22, 30, 833227)
+```
+
+同时，也可以运用" +", " -", " \*", " /", " %"等运算符对时间间隔处理：
+
+```
+>>> seven_minutes = datetime.timedelta(minutes=3) + datetime.timedelta(minutes=4)
+>>> three_minutes = seven_minutes - datetime.timedelta(minutes=4)
+>>> six_minutes = three_minutes * 2
+>>> six_minutes / three_minutes
+2.0
+>>> seven_minutes % three_minutes
+datetime.timedelta(0, 60)
+```
 
 ## 未完待续。。。
