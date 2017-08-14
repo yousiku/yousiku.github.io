@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "时空猎人：python标准库datetime,time,calendar"
+title:      "时空猎人：Python标准库datetime"
 subtitle:   "未完待续"
 date:       2017-08-13 21:27:00
 author:     "Yousiku"
@@ -13,7 +13,7 @@ tags:
 在开发中我们常常需要处理时间。  
 通常我们会面对两种形式的时间，一种是**格式化字符串**的形式，如"2017-08-03 21:32:00"，即文字形式能被人轻易识别的形式；  
 另一种是[**UNIX时间戳**](https://baike.baidu.com/item/%E6%97%B6%E9%97%B4%E6%88%B3)格式，即从1970年0点开始到现在经过的秒数。  
-Python提供了三个时间相关的标准库datetime, time, calendar能够很好的帮助我们解决处理时间的问题。
+Python提供了标准库datetime能够很好的帮助我们解决处理时间的问题。
 
 ## 实验环境
 
