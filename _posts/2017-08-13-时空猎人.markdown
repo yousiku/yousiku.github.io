@@ -188,7 +188,7 @@ True
 
 #### 时间倒退/后移
 
-要让时间倒退或后移，首先我们得知道倒退或后移多长的时间间隔。timedelta正是表示时间间隔的类型。
+要让时间倒退或后移，首先我们得知道倒退或后移多长的时间间隔。timedelta正是表示时间间隔的类型。  
 timedelta共有days, seconds, microseconds, milliseconds, minutes, hours, weeks八个属性，初始化的时候给相应属性赋值即可：
 
 ```
