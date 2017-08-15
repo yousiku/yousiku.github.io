@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "时空猎人：Python标准库datetime"
-subtitle:   "未完待续"
+subtitle:   "轻松穿越，来去自如"
 date:       2017-08-13 21:27:00
 author:     "Yousiku"
 header-img: "img/post-bg-2015.jpg"
@@ -244,4 +244,4 @@ datetime.datetime(2017, 9, 14, 22, 22, 30, 833227)
 datetime.timedelta(0, 60)
 ```
 
-## 未完待续。。。
+---
